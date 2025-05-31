@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* cor dourada ao passar o mouse */
+    color: #62ccdf; /* cor aqua ao passar o mouse */
 }
 
 h1 {
@@ -137,7 +137,7 @@ footer {
 
 /*personalizacao com icones*/
 .color-switch img {
-    width: 30px;
+    width: 50px;
     margin: 5px;
     cursor: pointer;
 }
