@@ -17,3 +17,8 @@ document.getElementById('contatoForm').addEventListener('submit', function(e) {
         e.preventDefault()
     }
 })
+
+//nav ul 
+function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('show')
+}
