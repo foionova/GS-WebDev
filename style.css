@@ -141,3 +141,27 @@ footer {
     margin: 5px;
     cursor: pointer;
 }
+/* estilizando o quiz */
+#quiz-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#quiz-container li {
+    margin: 10px 0;
+}
+
+#quiz-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #0f6a94;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#quiz-container button:hover {
+    background-color: #0c5475;
+}
