@@ -46,4 +46,9 @@ function mostrarResultado() {
     document.getElementById('resultado').innerText = `Você acertou ${acertos} de ${perguntas.length}`
 }
 
+//personalizacao com icone
+function mudarFundo(cor) {
+    document.body.style.backgroundColor = cor;
+}
+
 
