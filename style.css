@@ -134,3 +134,10 @@ footer {
         display: block;
     }
 }
+
+/*personalizacao com icones*/
+.color-switch img {
+    width: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
