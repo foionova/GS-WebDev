@@ -22,3 +22,28 @@ document.getElementById('contatoForm').addEventListener('submit', function(e) {
 function toggleMenu() {
     document.querySelector('nav ul').classList.toggle('show')
 }
+
+//QUIS
+const perguntas = [
+    { pergunta: "O que é uma enchente?", resposta: "A", opcoes: ["A. Acúmulo excessivo de água", "B. Falta de água", "C. Erupção vulcânica"] },
+    // Adicione mais 9 perguntas
+]
+
+const quizContainer = document.getElementById('quiz-container')
+perguntas.forEach((q, i) => {
+    const div = document.createElement('div')
+    div.innerHTML = `<p>${q.pergunta}</p>${q.opcoes.map((op, j) => `
+        <label><input type="radio" name="q${i}" value="${op[0]}"> ${op}</label><br>`).join('')}`
+    quizContainer.appendChild(div)
+});
+
+function mostrarResultado() {
+    let acertos = 0
+    perguntas.forEach((q, i) => {
+        const resposta = document.querySelector(`input[name="q${i}"]:checked`)
+        if (resposta && resposta.value === q.resposta) acertos++
+    })
+    document.getElementById('resultado').innerText = `Você acertou ${acertos} de ${perguntas.length}`
+}
+
+
